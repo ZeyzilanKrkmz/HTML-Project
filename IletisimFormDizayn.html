@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Tercihler Formu</title>
+        <style>
+            form{
+                display:flex;
+                flex-direction:column;
+                max-width:400px;
+                margin:auto;
+            }
+            label{
+                margin-top:10px;
+                color:slateblue;
+
+            }
+            input,textarea,button{
+                padding:10px;
+                margin-top:5px;
+                border: 2px solid sandybrown;
+                border-radius:5px;
+            }
+            button {
+                background-color: coral;
+                color:antiquewhite;
+                cursor:pointer;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tercih Formu</h1>
+        </header>
+        <form action="/submit" method="post">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="numara">Numara:</label>
+            <input type="phone" id="numara" name="numara" required>
+            <label for="adres">Adres:</label>
+            <input type="address" id="adres" name="adres" required>
+            <label for="şehir/eyalet">Şehir/Eyalet:</label>
+            <input type="text" id="şehir" name="şehir" required>
+            <label for="Ülke">Ülke:</label>
+            <input type="text" id="ülke" name="ülke" required>
+
+        </form>
+    </body>
+</html>
